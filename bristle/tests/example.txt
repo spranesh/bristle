@@ -1,0 +1,42 @@
+% Bristle
+% Pranesh Srinivasan
+% 17th June 2010
+
+S# What is Bristle?
+
+# Introduction
+  Bristle is a framework that allows one to
+  !!
+  ((
+    * quickly write beamer presentations.
+    !!
+    * not lose their flow while doing it.
+  ))
+##
+
+# Where?
+  Bristle can be found at:
+
+  C(
+    http://www.cse.iitm.ac.in/~spranesh/projects/bristle
+  C)
+##
+
+S# More about Bristle
+
+# Facts
+  Bristle is written in Haskell. It's markup language has purposely been kept
+  context free.
+
+  Bristle supports arbitrary LaTeX, like \emph{so}.
+
+  Stuff can be escaped in Bristle by putting a \texttt{\%} as the first
+  character in a line.
+##
+
+# Upcoming Features
+  [[
+    * A vim syntax higlighter for bristle files
+  ]]
+##
+

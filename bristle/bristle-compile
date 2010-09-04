@@ -1,0 +1,32 @@
+#!/bin/bash
+
+filename=$1
+
+whereis pdflatex > /dev/null
+if [ $? != 0 ]; then
+  echo "pdflatex not found"
+  exit 1
+fi
+
+whereis bristle > /dev/null
+if [ $? != 0 ]; then
+  echo "bristle not found"
+  exit 1
+fi
+
+
+if [ "$filename" = "" ]; then
+  echo "Require bristle file to compile as first argument"
+  echo " Usage: $0 filename"
+  exit 1
+fi
+
+base_name=${filename%.*}
+
+if [ -f "./bristle" ]; then
+  ./bristle < $filename > ${base_name}.tex
+else 
+  bristle < $filename > ${base_name}.tex
+fi
+
+pdflatex ${base_name}.tex
