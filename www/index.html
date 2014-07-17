@@ -1,172 +1,241 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"
-><head
-  ><title
-    >Bristle - Making Beamer fun again.</title
-    ><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"
-     /><meta name="generator" content="pandoc"
-     /><meta name="author" content="Pranesh Srinivasan"
-     /><meta name="date" content="June 17th 2010"
-     /><link rel="stylesheet" href="pandoc.css" type="text/css" media="all" />
-</head
-  ><body
-  ><h1 class="title"
-    >Bristle - Making Beamer fun again.</h1
-    ><div id="toc"
-    ><ul
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Bristle - Making Beamer fun again.</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Pranesh Srinivasan" />
+  <meta name="date" content="June 17th 2010" />
+  <link rel="stylesheet" href="pandoc.css" type="text/css" />
+</head>
+<body>
+<h1 class="title">Bristle - Making Beamer fun again.</h1>
+<div id="TOC"
+><ul
+  ><li
+    ><a href="#what"
+      ><span class="toc-section-number"
+	>1</span
+	> What?</a
+      ><ul
       ><li
-	><a href="#what" id="TOC-what"
-	  >What?</a
-	  ><ul
-	  ><li
-	    ><a href="#example" id="TOC-example"
-	      >Example</a
-	      ></li
-	    ></ul
-	  ></li
-	><li
-	><a href="#how" id="TOC-how"
-	  >How?</a
-	  ><ul
-	  ><li
-	    ><a href="#license" id="TOC-license"
-	      >License</a
-	      ></li
-	    ></ul
-	  ></li
-	><li
-	><a href="#downloading-installing-and-running" id="TOC-downloading-installing-and-running"
-	  >Downloading, Installing and Running</a
-	  ><ul
-	  ><li
-	    ><a href="#requirements" id="TOC-requirements"
-	      >Requirements</a
-	      ></li
-	    ><li
-	    ><a href="#downloading-and-installing" id="TOC-downloading-and-installing"
-	      >Downloading and Installing</a
-	      ></li
-	    ><li
-	    ><a href="#running" id="TOC-running"
-	      >Running</a
-	      ></li
-	    ><li
-	    ><a href="#effective-usage" id="TOC-effective-usage"
-	      >Effective Usage</a
-	      ></li
-	    ></ul
-	  ></li
-	><li
-	><a href="#user-guide" id="TOC-user-guide"
-	  >User Guide</a
-	  ><ul
-	  ><li
-	    ><a href="#title-author-date" id="TOC-title-author-date"
-	      >Title, Author, Date</a
-	      ></li
-	    ><li
-	    ><a href="#markup" id="TOC-markup"
-	      >Markup</a
-	      ><ul
-	      ><li
-		><a href="#frames" id="TOC-frames"
-		  >Frames</a
-		  ></li
-		><li
-		><a href="#listsenumerations" id="TOC-listsenumerations"
-		  >Lists/Enumerations</a
-		  ></li
-		><li
-		><a href="#verbatim" id="TOC-verbatim"
-		  >Verbatim</a
-		  ></li
-		><li
-		><a href="#sections" id="TOC-sections"
-		  >Sections</a
-		  ></li
-		><li
-		><a href="#centering" id="TOC-centering"
-		  >Centering</a
-		  ></li
-		><li
-		><a href="#pauses" id="TOC-pauses"
-		  >Pauses</a
-		  ></li
-		></ul
-	      ></li
-	    ><li
-	    ><a href="#escaping" id="TOC-escaping"
-	      >Escaping</a
-	      ></li
-	    ><li
-	    ><a href="#quick-reference" id="TOC-quick-reference"
-	      >Quick Reference</a
-	      ></li
-	    ><li
-	    ><a href="#arbitrary-latex-commands" id="TOC-arbitrary-latex-commands"
-	      >Arbitrary LaTeX commands</a
-	      ></li
-	    ><li
-	    ><a href="#header-used-by-bristle" id="TOC-header-used-by-bristle"
-	      >Header used by Bristle</a
-	      ></li
-	    ><li
-	    ><a href="#notes" id="TOC-notes"
-	      >Notes</a
-	      ></li
-	    ></ul
-	  ></li
-	><li
-	><a href="#whats-coming-up" id="TOC-whats-coming-up"
-	  >What&rsquo;s coming up?</a
+	><a href="#example"
+	  ><span class="toc-section-number"
+	    >1.1</span
+	    > Example</a
 	  ></li
 	></ul
-      ></div
-    ><h1 id="what"
-    ><a href="#TOC-what"
-      >What?</a
-      ></h1
-    ><p
-    >We all like beamer. No, really! It gives us freedom to do what we want to. We don&rsquo;t have to click ten buttons (and search through menus) to get something done. And it creates amazing looking presentations.</p
-    ><p
-    >However, writing LaTeX Beamer <em
-      >sucks</em
-      >. Most of my presentations contain the same elements, similar features, but I end up typing way over what I should be. It also gets in the way of my thinking my presentation through.</p
-    ><p
-    >So, I decided to create an EXTREMELY simple &ldquo;markup&rdquo; language for helping my fingers, and to stay out of my while I think. It of course had to support insertion of arbitrary LaTeX commands.</p
-    ><h2 id="example"
-    ><a href="#TOC-example"
-      >Example</a
+      ></li
+    ><li
+    ><a href="#how"
+      ><span class="toc-section-number"
+	>2</span
+	> How?</a
+      ><ul
+      ><li
+	><a href="#license"
+	  ><span class="toc-section-number"
+	    >2.1</span
+	    > License</a
+	  ></li
+	></ul
+      ></li
+    ><li
+    ><a href="#downloading-installing-and-running"
+      ><span class="toc-section-number"
+	>3</span
+	> Downloading, Installing and Running</a
+      ><ul
+      ><li
+	><a href="#requirements"
+	  ><span class="toc-section-number"
+	    >3.1</span
+	    > Requirements</a
+	  ></li
+	><li
+	><a href="#downloading-and-installing"
+	  ><span class="toc-section-number"
+	    >3.2</span
+	    > Downloading and Installing</a
+	  ></li
+	><li
+	><a href="#running"
+	  ><span class="toc-section-number"
+	    >3.3</span
+	    > Running</a
+	  ></li
+	><li
+	><a href="#effective-usage"
+	  ><span class="toc-section-number"
+	    >3.4</span
+	    > Effective Usage</a
+	  ></li
+	></ul
+      ></li
+    ><li
+    ><a href="#user-guide"
+      ><span class="toc-section-number"
+	>4</span
+	> User Guide</a
+      ><ul
+      ><li
+	><a href="#title-author-date"
+	  ><span class="toc-section-number"
+	    >4.1</span
+	    > Title, Author, Date</a
+	  ></li
+	><li
+	><a href="#markup"
+	  ><span class="toc-section-number"
+	    >4.2</span
+	    > Markup</a
+	  ><ul
+	  ><li
+	    ><a href="#frames"
+	      ><span class="toc-section-number"
+		>4.2.1</span
+		> Frames</a
+	      ></li
+	    ><li
+	    ><a href="#listsenumerations"
+	      ><span class="toc-section-number"
+		>4.2.2</span
+		> Lists/Enumerations</a
+	      ></li
+	    ><li
+	    ><a href="#verbatim"
+	      ><span class="toc-section-number"
+		>4.2.3</span
+		> Verbatim</a
+	      ></li
+	    ><li
+	    ><a href="#sections"
+	      ><span class="toc-section-number"
+		>4.2.4</span
+		> Sections</a
+	      ></li
+	    ><li
+	    ><a href="#centering"
+	      ><span class="toc-section-number"
+		>4.2.5</span
+		> Centering</a
+	      ></li
+	    ><li
+	    ><a href="#pauses"
+	      ><span class="toc-section-number"
+		>4.2.6</span
+		> Pauses</a
+	      ></li
+	    ></ul
+	  ></li
+	><li
+	><a href="#escaping"
+	  ><span class="toc-section-number"
+	    >4.3</span
+	    > Escaping</a
+	  ></li
+	><li
+	><a href="#quick-reference"
+	  ><span class="toc-section-number"
+	    >4.4</span
+	    > Quick Reference</a
+	  ></li
+	><li
+	><a href="#arbitrary-latex-commands"
+	  ><span class="toc-section-number"
+	    >4.5</span
+	    > Arbitrary LaTeX commands</a
+	  ></li
+	><li
+	><a href="#header-used-by-bristle"
+	  ><span class="toc-section-number"
+	    >4.6</span
+	    > Header used by Bristle</a
+	  ></li
+	><li
+	><a href="#notes"
+	  ><span class="toc-section-number"
+	    >4.7</span
+	    > Notes</a
+	  ></li
+	></ul
+      ></li
+    ><li
+    ><a href="#whats-coming-up"
+      ><span class="toc-section-number"
+	>5</span
+	> What’s coming up?</a
+      ></li
+    ></ul
+  ></div
+>
+<div id="what"
+><h1
+  ><a href="#TOC"
+    ><span class="header-section-number"
+      >1</span
+      > What?</a
+    ></h1
+  ><p
+  >We all like beamer. No, really! It gives us freedom to do what we want to. We don’t have to click ten buttons (and search through menus) to get something done. And it creates amazing looking presentations.</p
+  ><p
+  >However, writing LaTeX Beamer <em
+    >sucks</em
+    >. Most of my presentations contain the same elements, similar features, but I end up typing way over what I should be. It also gets in the way of my thinking my presentation through.</p
+  ><p
+  >So, I decided to create an EXTREMELY simple “markup” language for helping my fingers, and to stay out of my while I think. It of course had to support insertion of arbitrary LaTeX commands.</p
+  ><div id="example"
+  ><h2
+    ><a href="#TOC"
+      ><span class="header-section-number"
+	>1.1</span
+	> Example</a
       ></h2
     ><p
-    ><a href="example.pdf"
+    ><a href="https://raw.githubusercontent.com/spranesh/bristle/master/www/example.pdf"
       >This</a
-      > is the output obtained by writing <a href="example.txt"
+      > is the output obtained by writing <a href="https://github.com/spranesh/bristle/blob/master/www/example.txt"
       >this</a
       >.</p
-    ><h1 id="how"
-    ><a href="#TOC-how"
-      >How?</a
-      ></h1
-    ><p
-    >Bristle is a very simple markup language. It is designed from ground up to be context free. This is to keep translation simple, and easy correlation of errors in the markup to the errors pointed out by <code
-      >pdflatex</code
-      >.</p
-    ><p
-    >Specifically, Bristle touches lines tagged with their first non space characters.</p
-    ><h2 id="license"
-    ><a href="#TOC-license"
-      >License</a
+    ></div
+  ></div
+><div id="how"
+><h1
+  ><a href="#TOC"
+    ><span class="header-section-number"
+      >2</span
+      > How?</a
+    ></h1
+  ><p
+  >Bristle is a very simple markup language. It is designed from ground up to be context free. This is to keep translation simple, and easy correlation of errors in the markup to the errors pointed out by <code
+    >pdflatex</code
+    >.</p
+  ><p
+  >Specifically, Bristle touches lines tagged with their first non space characters.</p
+  ><div id="license"
+  ><h2
+    ><a href="#TOC"
+      ><span class="header-section-number"
+	>2.1</span
+	> License</a
       ></h2
     ><p
     >This utility is licensed under the Free BSD license.</p
-    ><h1 id="downloading-installing-and-running"
-    ><a href="#TOC-downloading-installing-and-running"
-      >Downloading, Installing and Running</a
-      ></h1
-    ><h2 id="requirements"
-    ><a href="#TOC-requirements"
-      >Requirements</a
+    ></div
+  ></div
+><div id="downloading-installing-and-running"
+><h1
+  ><a href="#TOC"
+    ><span class="header-section-number"
+      >3</span
+      > Downloading, Installing and Running</a
+    ></h1
+  ><div id="requirements"
+  ><h2
+    ><a href="#TOC"
+      ><span class="header-section-number"
+	>3.1</span
+	> Requirements</a
       ></h2
     ><p
     >Bristle requires</p
@@ -180,24 +249,28 @@
 	>pdflatex</code
 	></li
       ></ul
-    ><h2 id="downloading-and-installing"
-    ><a href="#TOC-downloading-and-installing"
-      >Downloading and Installing</a
+    ></div
+  ><div id="downloading-and-installing"
+  ><h2
+    ><a href="#TOC"
+      ><span class="header-section-number"
+	>3.2</span
+	> Downloading and Installing</a
       ></h2
     ><p
-    >Bristle can be downloaded from <a href="bristle.tar.gz"
-      >here</a
+    >Bristle can be downloaded by pulling this git repository with <code
+      >git clone https://github.com/spranesh/bristle.git</code
       >. Bristle is written in <em
       >Haskell</em
       > and can be compiled by simply typing <code
       >make</code
-      >. It can be installed (into <code
+      > in the bristle directory. It can be installed (into <code
       >/usr/bin</code
       >) by typing <code
       >make install</code
       >.</p
     ><p
-    >It can be installed to one&rsquo;s <code
+    >It can be installed to one’s <code
       >~/bin</code
       > by using <code
       >make install-home</code
@@ -206,20 +279,32 @@
     >A typical setup would hence be:</p
     ><pre
     ><code
-      >$ tar -xvzf bristle.tar.gz
-$ cd bristle
+      >$ git clone https://github.com/spranesh/bristle.git
+$ cd bristle/bristle
 $ make
 $ make install-home
 </code
       ></pre
-    ><h2 id="running"
-    ><a href="#TOC-running"
-      >Running</a
+    ><p
+    >If you want to regenerate the documentation:</p
+    ><pre
+    ><code
+      >$ cd ..               # go back to the root bristle folder
+$ make html markdown  # This makes the documentation in www/index.html and README.md
+</code
+      ></pre
+    ></div
+  ><div id="running"
+  ><h2
+    ><a href="#TOC"
+      ><span class="header-section-number"
+	>3.3</span
+	> Running</a
       ></h2
     ><p
     >Bristle takes input from stdin and writes output to stdout. It has <em
       >no</em
-      > command line options whatsoever (I think that&rsquo;s a good thing). The output from Bristle can be run through pdflatex directly. Here&rsquo;s an example of a use case.</p
+      > command line options whatsoever (I think that’s a good thing). The output from Bristle can be run through pdflatex directly. Here’s an example of a use case.</p
     ><pre
     ><code
       >$ bristle &lt; ppt.txt &gt; ppt.tex
@@ -235,27 +320,43 @@ $ evince ppt.pdf
 $ evince ppt.pdf
 </code
       ></pre
-    ><h2 id="effective-usage"
-    ><a href="#TOC-effective-usage"
-      >Effective Usage</a
+    ></div
+  ><div id="effective-usage"
+  ><h2
+    ><a href="#TOC"
+      ><span class="header-section-number"
+	>3.4</span
+	> Effective Usage</a
       ></h2
     ><p
     >Ideally, Bristle is used for quick prototyping and a first draft of the beamer presentation. Finer edits are made to the tex file at the end, after one is satisfied with the results.</p
-    ><h1 id="user-guide"
-    ><a href="#TOC-user-guide"
-      >User Guide</a
-      ></h1
-    ><h2 id="title-author-date"
-    ><a href="#TOC-title-author-date"
-      >Title, Author, Date</a
+    ></div
+  ></div
+><div id="user-guide"
+><h1
+  ><a href="#TOC"
+    ><span class="header-section-number"
+      >4</span
+      > User Guide</a
+    ></h1
+  ><div id="title-author-date"
+  ><h2
+    ><a href="#TOC"
+      ><span class="header-section-number"
+	>4.1</span
+	> Title, Author, Date</a
       ></h2
     ><p
-    >Bristle treats the first three lines specially. Each has to start with a &lsquo;%&rsquo; character, and must contain in order, the title, author and date.</p
+    >Bristle treats the first three lines specially. Each has to start with a ‘%’ character, and must contain in order, the title, author and date.</p
     ><p
     >It should warn in case the header is wary (does not start with a percentage).</p
-    ><h2 id="markup"
-    ><a href="#TOC-markup"
-      >Markup</a
+    ></div
+  ><div id="markup"
+  ><h2
+    ><a href="#TOC"
+      ><span class="header-section-number"
+	>4.2</span
+	> Markup</a
       ></h2
     ><p
     >Most Beamer presentations contain the same key elements, at least during the brainstorming stage.</p
@@ -273,70 +374,77 @@ $ evince ppt.pdf
     >(In fact, the only things I use apart from these are images, quotations, and vspaces. But they are rare enough not to require markup).</p
     ><p
     >Bristle deals with the most commonly occurring scenarios, while staying out of your way for the rest.</p
-    ><h3 id="frames"
-    ><a href="#TOC-frames"
-      >Frames</a
-      ></h3
-    ><p
-    >Frames are created as</p
-    ><pre
-    ><code
-      ># Frame Title
+    ><div id="frames"
+    ><h3
+      ><a href="#TOC"
+	><span class="header-section-number"
+	  >4.2.1</span
+	  > Frames</a
+	></h3
+      ><p
+      >Frames are created as</p
+      ><pre
+      ><code
+	># Frame Title
 </code
-      ></pre
-    ><p
-    >They <em
-      >must</em
-      > be closed with <code
-      >##</code
-      >.</p
-    ><p
-    >Fragile frames (verbatim) are often required. These can be created by:</p
-    ><pre
-    ><code
-      >#* A fragile frame
+	></pre
+      ><p
+      >They <em
+	>must</em
+	> be closed with <code
+	>##</code
+	>.</p
+      ><p
+      >Fragile frames (verbatim) are often required. These can be created by:</p
+      ><pre
+      ><code
+	>#* A fragile frame
 </code
-      ></pre
-    ><p
-    >An example:</p
-    ><pre
-    ><code
-      ># A slide about how cool gulls are
+	></pre
+      ><p
+      >An example:</p
+      ><pre
+      ><code
+	># A slide about how cool gulls are
 
   Gulls are like AWESOME
 
 ##
 </code
-      ></pre
-    ><h3 id="listsenumerations"
-    ><a href="#TOC-listsenumerations"
-      >Lists/Enumerations</a
-      ></h3
-    ><p
-    >Unordered lists are started with the <code
-      >((</code
-      > tag. They are closed with the <code
-      >))</code
-      > tag.</p
-    ><p
-    >Ordered lists are started with the <code
-      >[[</code
-      > tag. They are closed with the <code
-      >]]</code
-      > tag.</p
-    ><p
-    ><em
-      >Note</em
-      >: Each of these tags must be on a new line by themselves.</p
-    ><p
-    >Items in the list begin with a <code
-      >*</code
-      >.</p
-    ><p
-    >An example:</p
-    ><pre
-    ><code
-      >I like
+	></pre
+      ></div
+    ><div id="listsenumerations"
+    ><h3
+      ><a href="#TOC"
+	><span class="header-section-number"
+	  >4.2.2</span
+	  > Lists/Enumerations</a
+	></h3
+      ><p
+      >Unordered lists are started with the <code
+	>((</code
+	> tag. They are closed with the <code
+	>))</code
+	> tag.</p
+      ><p
+      >Ordered lists are started with the <code
+	>[[</code
+	> tag. They are closed with the <code
+	>]]</code
+	> tag.</p
+      ><p
+      ><em
+	>Note</em
+	>: Each of these tags must be on a new line by themselves.</p
+      ><p
+      >Items in the list begin with a <code
+	>*</code
+	>.</p
+      ><p
+      >An example:</p
+      ><pre
+      ><code
+	>I like
 
 ((
   * apples
@@ -351,24 +459,28 @@ In order I like
   * apples
 ]]
 </code
-      ></pre
-    ><h3 id="verbatim"
-    ><a href="#TOC-verbatim"
-      >Verbatim</a
-      ></h3
-    ><p
-    >A verbatim section (useful for displaying code, besides other things) is started with <code
-      >{{</code
-      > and ends with <code
-      >}}</code
-      >. Remember that the frame containing them must be marked fragile with a <code
-      >#*</code
-      >.</p
-    ><p
-    >Example:</p
-    ><pre
-    ><code
-      >#* A slide with code
+	></pre
+      ></div
+    ><div id="verbatim"
+    ><h3
+      ><a href="#TOC"
+	><span class="header-section-number"
+	  >4.2.3</span
+	  > Verbatim</a
+	></h3
+      ><p
+      >A verbatim section (useful for displaying code, besides other things) is started with <code
+	>{{</code
+	> and ends with <code
+	>}}</code
+	>. Remember that the frame containing them must be marked fragile with a <code
+	>#*</code
+	>.</p
+      ><p
+      >Example:</p
+      ><pre
+      ><code
+	>#* A slide with code
 
 Here is some useful C code
 
@@ -385,20 +497,24 @@ Here is some useful C code
 Useful code, that, isn't it?
 ##
 </code
-      ></pre
-    ><h3 id="sections"
-    ><a href="#TOC-sections"
-      >Sections</a
-      ></h3
-    ><p
-    >Sections are marked with a <code
-      >S#</code
-      >. The <code
-      >#</code
-      > are reminiscent of pandoc&rsquo;s (or markdown&rsquo;s) tags. As an example:</p
-    ><pre
-    ><code
-      >...
+	></pre
+      ></div
+    ><div id="sections"
+    ><h3
+      ><a href="#TOC"
+	><span class="header-section-number"
+	  >4.2.4</span
+	  > Sections</a
+	></h3
+      ><p
+      >Sections are marked with a <code
+	>S#</code
+	>. The <code
+	>#</code
+	> are reminiscent of pandoc’s (or markdown’s) tags. As an example:</p
+      ><pre
+      ><code
+	>...
 End of last slide
 ## 
 
@@ -409,24 +525,28 @@ End of last slide
 ...
 ...
 </code
-      ></pre
-    ><p
-    >A <code
-      >#S</code
-      > tag can be used wherever a section tag can be used in Haskell.</p
-    ><h3 id="centering"
-    ><a href="#TOC-centering"
-      >Centering</a
-      ></h3
-    ><p
-    >Centering is achieved with the <code
-      >C(</code
-      > and the <code
-      >C)</code
-      > tags. As an example:</p
-    ><pre
-    ><code
-      ># Lame Slide
+	></pre
+      ><p
+      >A <code
+	>#S</code
+	> tag can be used wherever a section tag can be used in Haskell.</p
+      ></div
+    ><div id="centering"
+    ><h3
+      ><a href="#TOC"
+	><span class="header-section-number"
+	  >4.2.5</span
+	  > Centering</a
+	></h3
+      ><p
+      >Centering is achieved with the <code
+	>C(</code
+	> and the <code
+	>C)</code
+	> tags. As an example:</p
+      ><pre
+      ><code
+	># Lame Slide
 
 This is arbitrary text
 
@@ -436,24 +556,28 @@ C)
 
 ##
 </code
-      ></pre
-    ><h3 id="pauses"
-    ><a href="#TOC-pauses"
-      >Pauses</a
-      ></h3
-    ><p
-    >Pauses are achieved with a <code
-      >!!</code
-      >. They literally expand to a <code
-      >\pause</code
-      > and can be used wherever a <code
-      >\pause</code
-      > can be used it.</p
-    ><p
-    >As an example</p
-    ><pre
-    ><code
-      ># Barney Stinson says
+	></pre
+      ></div
+    ><div id="pauses"
+    ><h3
+      ><a href="#TOC"
+	><span class="header-section-number"
+	  >4.2.6</span
+	  > Pauses</a
+	></h3
+      ><p
+      >Pauses are achieved with a <code
+	>!!</code
+	>. They literally expand to a <code
+	>\pause</code
+	> and can be used wherever a <code
+	>\pause</code
+	> can be used it.</p
+      ><p
+      >As an example</p
+      ><pre
+      ><code
+	># Barney Stinson says
 
 ((
   * Wait for it
@@ -464,10 +588,15 @@ C)
 ))
 ##
 </code
-      ></pre
-    ><h2 id="escaping"
-    ><a href="#TOC-escaping"
-      >Escaping</a
+	></pre
+      ></div
+    ></div
+  ><div id="escaping"
+  ><h2
+    ><a href="#TOC"
+      ><span class="header-section-number"
+	>4.3</span
+	> Escaping</a
       ></h2
     ><p
     >Any line which has its first non whitespace character as <code
@@ -497,111 +626,123 @@ C)
     >This will remove the first <code
       >%</code
       > keeping the rest of the line intact.</p
-    ><h2 id="quick-reference"
-    ><a href="#TOC-quick-reference"
-      >Quick Reference</a
+    ></div
+  ><div id="quick-reference"
+  ><h2
+    ><a href="#TOC"
+      ><span class="header-section-number"
+	>4.4</span
+	> Quick Reference</a
       ></h2
     ><table
-    ><tr
-      ><th align="center" style="width: 7%;"
-	>Tag</th
-	><th align="left" style="width: 38%;"
-	>Meaning</th
-	></tr
-      ><tr
-      ><td align="center"
-	>#</td
-	><td align="left"
-	>Title - of a frame</td
-	></tr
-      ><tr
-      ><td align="center"
-	>#*</td
-	><td align="left"
-	>Title of a Fragile Frame</td
-	></tr
-      ><tr
-      ><td align="center"
-	>##</td
-	><td align="left"
-	>End Frame</td
-	></tr
-      ><tr
-      ><td align="center"
-	>S#</td
-	><td align="left"
-	>section</td
-	></tr
-      ><tr
-      ><td align="center"
-	>((</td
-	><td align="left"
-	>start of itemize</td
-	></tr
-      ><tr
-      ><td align="center"
-	>))</td
-	><td align="left"
-	>end of itemize</td
-	></tr
-      ><tr
-      ><td align="center"
-	>[[</td
-	><td align="left"
-	>start of enumeration</td
-	></tr
-      ><tr
-      ><td align="center"
-	>]]</td
-	><td align="left"
-	>end of enumeration</td
-	></tr
-      ><tr
-      ><td align="center"
-	>*</td
-	><td align="left"
-	>point in itemize/enumeration</td
-	></tr
-      ><tr
-      ><td align="center"
-	>{{</td
-	><td align="left"
-	>start of verbatim</td
-	></tr
-      ><tr
-      ><td align="center"
-	>}}</td
-	><td align="left"
-	>end of verbatim</td
-	></tr
-      ><tr
-      ><td align="center"
-	>C(</td
-	><td align="left"
-	>begin center</td
-	></tr
-      ><tr
-      ><td align="center"
-	>C)</td
-	><td align="left"
-	>end center</td
-	></tr
-      ><tr
-      ><td align="center"
-	>!!</td
-	><td align="left"
-	>pause</td
-	></tr
-      ><tr
-      ><td align="center"
-	>%</td
-	><td align="left"
-	>escape the rest of the line</td
-	></tr
+    ><thead
+      ><tr class="header"
+	><th align="center"
+	  >Tag</th
+	  ><th align="left"
+	  >Meaning</th
+	  ></tr
+	></thead
+      ><tbody
+      ><tr class="odd"
+	><td align="center"
+	  >#</td
+	  ><td align="left"
+	  >Title - of a frame</td
+	  ></tr
+	><tr class="even"
+	><td align="center"
+	  >#*</td
+	  ><td align="left"
+	  >Title of a Fragile Frame</td
+	  ></tr
+	><tr class="odd"
+	><td align="center"
+	  >##</td
+	  ><td align="left"
+	  >End Frame</td
+	  ></tr
+	><tr class="even"
+	><td align="center"
+	  >S#</td
+	  ><td align="left"
+	  >section</td
+	  ></tr
+	><tr class="odd"
+	><td align="center"
+	  >((</td
+	  ><td align="left"
+	  >start of itemize</td
+	  ></tr
+	><tr class="even"
+	><td align="center"
+	  >))</td
+	  ><td align="left"
+	  >end of itemize</td
+	  ></tr
+	><tr class="odd"
+	><td align="center"
+	  >[[</td
+	  ><td align="left"
+	  >start of enumeration</td
+	  ></tr
+	><tr class="even"
+	><td align="center"
+	  >]]</td
+	  ><td align="left"
+	  >end of enumeration</td
+	  ></tr
+	><tr class="odd"
+	><td align="center"
+	  >*</td
+	  ><td align="left"
+	  >point in itemize/enumeration</td
+	  ></tr
+	><tr class="even"
+	><td align="center"
+	  >{{</td
+	  ><td align="left"
+	  >start of verbatim</td
+	  ></tr
+	><tr class="odd"
+	><td align="center"
+	  >}}</td
+	  ><td align="left"
+	  >end of verbatim</td
+	  ></tr
+	><tr class="even"
+	><td align="center"
+	  >C(</td
+	  ><td align="left"
+	  >begin center</td
+	  ></tr
+	><tr class="odd"
+	><td align="center"
+	  >C)</td
+	  ><td align="left"
+	  >end center</td
+	  ></tr
+	><tr class="even"
+	><td align="center"
+	  >!!</td
+	  ><td align="left"
+	  >pause</td
+	  ></tr
+	><tr class="odd"
+	><td align="center"
+	  >%</td
+	  ><td align="left"
+	  >escape the rest of the line</td
+	  ></tr
+	></tbody
       ></table
-    ><h2 id="arbitrary-latex-commands"
-    ><a href="#TOC-arbitrary-latex-commands"
-      >Arbitrary LaTeX commands</a
+    ></div
+  ><div id="arbitrary-latex-commands"
+  ><h2
+    ><a href="#TOC"
+      ><span class="header-section-number"
+	>4.5</span
+	> Arbitrary LaTeX commands</a
       ></h2
     ><p
     >Arbitrary LaTeX can be inserted wherever deemed necessary:</p
@@ -616,9 +757,13 @@ C)
 ##
 </code
       ></pre
-    ><h2 id="header-used-by-bristle"
-    ><a href="#TOC-header-used-by-bristle"
-      >Header used by Bristle</a
+    ></div
+  ><div id="header-used-by-bristle"
+  ><h2
+    ><a href="#TOC"
+      ><span class="header-section-number"
+	>4.6</span
+	> Header used by Bristle</a
       ></h2
     ><p
     >Bristle uses the following default header in generating the TeX file:</p
@@ -632,52 +777,62 @@ C)
       ></pre
     ><p
     >It also sets the title, author and date as found in the first three lines of the file, and creates a default title slide.</p
-    ><h2 id="notes"
-    ><a href="#TOC-notes"
-      >Notes</a
+    ></div
+  ><div id="notes"
+  ><h2
+    ><a href="#TOC"
+      ><span class="header-section-number"
+	>4.7</span
+	> Notes</a
       ></h2
     ><p
     >Some important caveats:</p
     ><ul
     ><li
-      >Don&rsquo;t forget to close your frames with a <code
+      >Don’t forget to close your frames with a <code
 	>]]</code
 	>.</li
       ><li
-      >Escape special characters<a href="#fn1" class="footnoteRef" id="fnref1"
-	><sup
-	  >1</sup
-	  ></a
+      >Escape special characters<sup
+	><a href="#fn1" class="footnoteRef" id="fnref1"
+	  >1</a
+	  ></sup
 	> just like you would with LaTeX.</li
       ><li
       >One might have to compile twice (using pdflatex) to get section headings properly.</li
       ></ul
     ><p
-    >Some limitations: * There is no way to currently change the header produced (apart from editing the TeX) - not even in verbatim mode. However, these tags occurring at the start of line are rare (except maybe the &lsquo;#&rsquo; tag in shell script sources).</p
-    ><h1 id="whats-coming-up"
-    ><a href="#TOC-whats-coming-up"
-      >What&rsquo;s coming up?</a
-      ></h1
-    ><p
-    >Bristle currently satisfies my itch. So, don&rsquo;t expect anything big soon (except bug fixes). However, I plan to:</p
-    ><ul
+    >Some limitations: * There is no way to currently change the header produced (apart from editing the TeX) - not even in verbatim mode. However, these tags occurring at the start of line are rare (except maybe the ‘#’ tag in shell script sources).</p
+    ></div
+  ></div
+><div id="whats-coming-up"
+><h1
+  ><a href="#TOC"
+    ><span class="header-section-number"
+      >5</span
+      > What’s coming up?</a
+    ></h1
+  ><p
+  >Bristle currently satisfies my itch. So, don’t expect anything big soon (except bug fixes). However, I plan to:</p
+  ><ul
+  ><li
+    >Create a vim syntax mode for bristle files.</li
     ><li
-      >Create a vim syntax mode for bristle files.</li
-      ><li
-      >Automatically insert frame endings <code
-	>]]</code
-	> if found absent.</li
-      ></ul
-    ><div class="footnotes"
-    ><hr
-       /><ol
-      ><li id="fn1"
-	><p
-	  >Namely # $ % &amp; ~ _ ^  { } <a href="#fnref1" class="footnoteBackLink" title="Jump back to footnote 1">&#8617;</a></p
-	  ></li
-	></ol
-      ></div
-    ></body
-  ></html
+    >Automatically insert frame endings <code
+      >]]</code
+      > if found absent.</li
+    ></ul
+  ></div
+><div class="footnotes"
+><hr
+   /><ol
+  ><li id="fn1"
+    ><p
+      >Namely # $ % &amp; ~ _ ^  { } <a href="#fnref1" class="footnoteBackLink" title="Jump back to footnote 1">↩</a></p
+      ></li
+    ></ol
+  ></div
 >
+</body>
+</html>
 

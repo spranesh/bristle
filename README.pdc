@@ -17,7 +17,8 @@ fingers, and to stay out of my while I think. It of course had to support
 insertion of arbitrary LaTeX commands.
 
 ## Example
-[This](example.pdf) is the output obtained by writing [this](example.txt).
+[This](https://raw.githubusercontent.com/spranesh/bristle/master/www/example.pdf) is the output obtained by writing 
+[this](https://github.com/spranesh/bristle/blob/master/www/example.txt).
 
 # How?
 
@@ -42,18 +43,24 @@ Bristle requires
 
 ## Downloading and Installing
 
-Bristle can be downloaded from [here](bristle.tar.gz). Bristle is written in
-*Haskell* and can be compiled by simply typing `make`. It can be installed (into
-`/usr/bin`) by typing `make install`.
+Bristle can be downloaded by pulling this git repository with 
+`git clone https://github.com/spranesh/bristle.git`. Bristle is written in
+*Haskell* and can be compiled by simply typing `make` in the bristle directory. 
+It can be installed (into `/usr/bin`) by typing `make install`.
 
 It can be installed to one's `~/bin` by using `make install-home`.
 
 A typical setup would hence be:
 
-    $ tar -xvzf bristle.tar.gz
-    $ cd bristle
+    $ git clone https://github.com/spranesh/bristle.git
+    $ cd bristle/bristle
     $ make
     $ make install-home
+
+If you want to regenerate the documentation:
+
+    $ cd ..               # go back to the root bristle folder
+    $ make html markdown  # This makes the documentation in www/index.html and README.md
 
 ## Running
 
