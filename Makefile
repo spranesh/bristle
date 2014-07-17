@@ -13,8 +13,12 @@ OPTIONS="-N --toc -S"
 #OPTIONS="-A footer.txt -B header.txt -C custom_head.txt -H include_in_header.txt"
 
 
-all: html 
+all: markdown html 
 #all: s5
+
+markdown:
+	echo "This file is *auto generated* from README.pdc via the Makefile\n\n" > README.markdown
+	tail -n+4 README.pdc >> README.markdown
 
 latex: compile_pdf run_pdf
 html: compile_html run_html
